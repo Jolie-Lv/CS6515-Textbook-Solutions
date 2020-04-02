@@ -1,8 +1,6 @@
 '''Unit test 2x2 utility functions'''
 
 import unittest
-from math import pow
-from os import environ
 
 class TestStringMethods(unittest.TestCase):
     '''Testing programmable textbook solutions'''
@@ -12,12 +10,12 @@ class TestStringMethods(unittest.TestCase):
             sums = []
             seqs = []
             for i in a:
-                if len(sums) is 0:
+                if sums:
                     sums.append(i)
                     seqs.append([i])
                 else:
-                    sum = sums[-1] + i
-                    if i > sum:
+                    _sum = sums[-1] + i
+                    if i > _sum:
                         sums.append(i)
                         seqs.append([i])
                     else:
@@ -35,7 +33,8 @@ class TestStringMethods(unittest.TestCase):
         def answer(a):
             s = [0.]
             for i, _ in enumerate(a):
-                if s[-1] is a[-1]: return s[1:]
+                if s[-1] is a[-1]:
+                    return s[1:]
                 s.append(min(a[i:], key=lambda x: pow(s[-1] + 200 - x, 2)))
             return s[1:]
 
