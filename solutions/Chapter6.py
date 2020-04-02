@@ -10,7 +10,7 @@ class TestStringMethods(unittest.TestCase):
             sums = []
             seqs = []
             for i in a:
-                if sums:
+                if not sums:
                     sums.append(i)
                     seqs.append([i])
                 else:
