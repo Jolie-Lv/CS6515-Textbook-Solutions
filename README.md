@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/JeremyCraigMartinez/CS6515-Textbook-Solutions.svg?branch=master)](https://travis-ci.com/JeremyCraigMartinez/CS6515-Textbook-Solutions)
+
 # About
 
 This repository is my way of tracking solutions to the example problems from [Algorithms](https://books.google.com/books?id=DJSUCgAAQBAJ&newbks=1&newbks_redir=0&lpg=PP1&dq=Algorithms%20Dasgupta&pg=PP1#v=onepage&q=Algorithms%20Dasgupta&f=false) by Sanjoy Dasgupta, Christos Papadimitriou, Umesh Vazirani. I will only be addressing only a handful of problems from
