@@ -4,5 +4,5 @@ python:
 install:
   - pip install -r requirements.txt
 script:
-  - python solutions/*
+  - find solutions -name Chapter*.py | xargs python
   - pylint solutions/*.py --rcfile=.pylintrc
